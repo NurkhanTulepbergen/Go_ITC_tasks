@@ -1,24 +1,21 @@
-# Go Packages for Internship Application
+#Go Packages for Internship Application
 
-Этот репозиторий содержит два пакета, `strings` и `wallet`, которые были созданы в рамках заданий для прохождения стажировки.
+This repository contains two packages, `strings` and `wallet`, which were created as part of internship application tasks.
 
-## strings
 
-Пакет `strings` предоставляет функции для работы со строками на языке программирования Go.
+##strings
+The `strings` package provides functions for working with strings in the Go programming language.
 
-### Функции
+###Functions
+1. `Reverse`: Reverses a string.
+2. `SymbolCount`: Returns the number of symbols in a string.
 
-1. `Reverse`: Разворачивает строку.
-2. `SymbolCount`: Возвращает количество символов в строке.
 
-   
 
-## wallet
+##wallet
+The `wallet` package represents an implementation of a wallet for handling bitcoins in the Go programming language.
 
-Пакет 'wallet' представляет собой реализацию кошелька для работы с биткойнами в языке программирования Go.
-
-### Функции
-
-1. `Deposit(amount Bitcoin)`: Вносит указанное количество биткойнов на счет кошелька.
-2. `Withdraw(amount Bitcoin) error`: Снимает указанное количество биткойнов со счета кошелька. Возвращает ошибку ErrInsufficientFunds, если на счете недостаточно средств.
-3. `Balance() Bitcoin`: Возвращает текущий баланс кошелька в биткойнах.
+###Functions
+1. `Deposit(amount Bitcoin)`: Deposits the specified amount of bitcoins into the wallet.
+2. `Withdraw(amount Bitcoin) error`: Withdraws the specified amount of bitcoins from the wallet. Returns an ErrInsufficientFunds error if there are insufficient funds in the wallet.
+3. `Balance() Bitcoin`: Returns the current balance of the wallet in bitcoins.
